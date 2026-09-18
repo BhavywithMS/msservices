@@ -1,0 +1,141 @@
+MS SERVICES - QUICK PROMPT FOR VIBE CODING PLATFORM
+=====================================================
+
+DESIGN SPECIFICATIONS:
+- Color Palette: Black (#1a1a1a) | Gray (#4a4a4a) | Light Gray (#f5f5f5) | White (#ffffff) | Accent Blue (#0066cc)
+- Typography: Poppins/Montserrat (headings, bold, modern) | Open Sans/Roboto (body, clean)
+- Logo: MS Services - Circular black badge with geometric design
+- Style: Modern, minimalist, professional, corporate
+
+WEBSITE LAYOUT & SECTIONS:
+
+1. STICKY NAVIGATION BAR
+- Logo on left, menu items (Home, Services, Portfolio, About, Blog, Contact), "Get Started" CTA button (blue)
+- Hamburger menu for mobile
+- Smooth scroll animations
+
+2. HERO SECTION (100vh Full Height)
+- Headline: "Digital Solutions For Modern Businesses"
+- Subheading: "Elevate Your Brand with Expert Digital Marketing & Technology Services"
+- Two CTA Buttons: "Start Your Project" (blue, filled) + "Learn More" (outlined black)
+- Animated scroll indicator at bottom
+- Background: Subtle gradient or geometric pattern
+
+3. SERVICES SECTION (4-Column Grid)
+- Digital Marketing Card (with icon, description, hover effects)
+- Web Development Card (with icon, description, hover effects)
+- Brand Strategy Card (with icon, description, hover effects)
+- SEO & Analytics Card (with icon, description, hover effects)
+- Cards scale up on hover with shadow effect
+- Responsive: 1 col mobile → 2 col tablet → 4 col desktop
+
+4. PORTFOLIO/FEATURED WORK SECTION
+- 3-column grid OR carousel of project cards
+- Each card: image, project name, category, brief description, "View Case Study" link
+- Light gray background
+- "View All Projects" button at bottom
+
+5. HOW IT WORKS SECTION (4-Step Process)
+- Horizontal or vertical timeline
+- Steps: 1. Discovery 2. Strategy 3. Implementation 4. Optimization
+- Icons, numbers, connecting lines
+- Hover animations with descriptions
+
+6. TESTIMONIALS SECTION
+- Carousel showing 3 testimonials at a time
+- Each card: client name, role, 5-star rating, quote, company logo
+- Auto-play with manual navigation
+- Light gray background
+
+7. STATISTICS SECTION
+- Black background with white text
+- 4 metrics grid (2 col on mobile):
+  * 500+ Projects Completed
+  * 98% Client Satisfaction
+  * 15+ Years Experience
+  * 250+ Happy Clients
+- Counter animations (numbers increment on scroll)
+
+8. NEWSLETTER SUBSCRIPTION
+- Dark gradient background (black to dark gray)
+- Heading: "Stay Updated with Industry Insights"
+- Email input + Subscribe button (blue)
+- Privacy disclaimer below
+
+9. FOOTER (Dark #1a1a1a)
+- 4 columns: Company Info + Social Icons | Services Links | Quick Links | Contact Info
+- White text on dark background
+- Bottom bar: Copyright + Links to Privacy/Terms
+- Responsive: Stack to single column on mobile
+
+INTERACTIVE FEATURES:
+✓ Smooth scroll animations on section entrance
+✓ Hover effects on all cards and buttons (scale, shadow, color change)
+✓ Carousel auto-play with manual controls
+✓ Counter animations for statistics
+✓ Sticky navigation with background change on scroll
+✓ Mobile hamburger menu with smooth animation
+✓ Form validation (newsletter subscription)
+✓ Smooth anchor link navigation
+
+RESPONSIVE DESIGN:
+✓ Mobile-first approach
+✓ Breakpoints: 768px (tablet), 1200px (desktop)
+✓ All text readable on small screens
+✓ Touch-friendly buttons (min 48x48px)
+✓ Images scale properly
+✓ Single column stacking on mobile
+
+SPECIAL EFFECTS:
+✓ Gradient backgrounds where appropriate
+✓ Subtle shadows on cards
+✓ Smooth transitions (0.3s ease on all interactive elements)
+✓ Fade-in animations on scroll
+✓ Hover lift effects on cards (transform: translateY)
+✓ Smooth color transitions on buttons
+
+TYPOGRAPHY SIZING:
+H1: 48px (desktop) / 32px (mobile)
+H2: 36px (desktop) / 24px (mobile)
+H3: 24px / 18px
+Body: 16px / 14px
+Small text: 14px / 12px
+
+SPACING:
+Use consistent 8px/16px grid
+Section padding: 60px vertical / 40px horizontal (desktop)
+Mobile: 40px vertical / 20px horizontal
+Card padding: 24px
+Gap between elements: 16px or 24px
+
+CTA BUTTON STYLES:
+Primary: Blue (#0066cc) background, white text, hover darkens to #0052a3
+Secondary: Transparent background, black border, hover fills with light gray
+All buttons: Rounded corners (6-8px), subtle shadow, 0.3s transition
+
+FORMS:
+- Email input: Clean border, focus state with blue outline
+- Submit button: Full width or auto-width depending on layout
+- Success message: Green checkmark with confirmation text
+- Error message: Red text with error explanation
+
+IMAGES & ASSETS:
+- Use high-quality stock images or placeholders
+- All images optimized for web
+- Responsive images using srcset
+- Lazy loading implemented
+
+SEO & META:
+- Page Title: "MS Services - Digital Marketing & Web Development Solutions"
+- Meta Description: "Professional digital marketing, web development, and brand strategy services. Drive growth with data-driven solutions."
+- Proper heading hierarchy (H1 once per page)
+- Alt text on all images
+- Schema markup for business and services
+
+ADDITIONAL PAGES (Optional):
+- About Us: Team, story, values
+- Service Details: Individual pages for each service
+- Blog: Blog grid with search and category filters
+- Contact: Contact form, map, info
+
+This prompt covers everything. Simply feed this into your vibe coding platform and it will generate a complete, professional digital marketing website for MS Services with all the specified features, design elements, and functionality.

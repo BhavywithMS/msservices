@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - MS Services | Get in Touch</title>
+    <meta name="description"
+        content="Contact MS Services for digital marketing, web development, and brand strategy services. Get a free consultation today." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-header.svg" alt="MS Services" width="200" height="44" class="nav-logo-svg" />
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span><span class="hamburger-line"></span><span
+                    class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-tag">Get In Touch</span>
+                <h1 class="page-hero-title">Let's Start a Conversation</h1>
+                <p class="page-hero-subtitle">Have a project in mind? We'd love to hear about it. Reach out and our team
+                    will get back to you within 24 hours.</p>
+                <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT MAIN -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-col reveal">
+                    <div class="contact-form-card">
+                        <h2 class="contact-form-heading">Send Us a Message</h2>
+                        <p class="contact-form-sub">Fill out the form and we'll respond within 24 hours.</p>
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                                </div>
+                                <div class="form-field">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="john@company.com"
+                                    required />
+                            </div>
+                            <div class="form-field">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone" placeholder="+91 98765 43210" />
+                            </div>
+                            <div class="form-field">
+                                <label for="serviceType">Service Interested In *</label>
+                                <select id="serviceType" name="serviceType" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="digital-marketing">Digital Marketing</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="brand-strategy">Brand Strategy</option>
+                                    <option value="seo-analytics">SEO &amp; Analytics</option>
+                                    <option value="full-package">Full Package</option>
+                                    <option value="other">Other / Not Sure</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select your budget...</option>
+                                    <option value="under-25k">Under ₹25,000/mo</option>
+                                    <option value="25k-65k">₹25,000 – ₹65,000/mo</option>
+                                    <option value="65k-150k">₹65,000 – ₹1,50,000/mo</option>
+                                    <option value="150k+">₹1,50,000+/mo</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="contactMessage">Your Message *</label>
+                                <textarea id="contactMessage" name="message" rows="5"
+                                    placeholder="Tell us about your project, goals, and timeline..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;"
+                                id="contactSubmit">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13" />
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                </svg>
+                                Send Message
+                            </button>
+                            <div class="contact-form-messages">
+                                <div class="contact-success" id="contact-success" style="display:none;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                        <polyline points="22 4 12 14.01 9 11.01" />
+                                    </svg>
+                                    <div>
+                                        <strong>Message sent successfully!</strong>
+                                        <p>Thank you for reaching out. Our team will contact you within 24 hours.</p>
+                                    </div>
+                                </div>
+                                <div class="contact-error" id="contact-error" style="display:none;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="12" y1="8" x2="12" y2="12" />
+                                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                                    </svg>
+                                    Please fill in all required fields correctly.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info-col">
+                    <div class="contact-info-card reveal">
+                        <div class="contact-info-icon" style="background:var(--color-accent-light)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0066cc"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="contact-info-title">Email Us</h3>
+                            <p class="contact-info-value"><a href="mailto:info@msservices.com">info@msservices.com</a>
+                            </p>
+                            <p class="contact-info-note">We reply within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card reveal">
+                        <div class="contact-info-icon" style="background:#fff3cd">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.53 3.49 2 2 0 0 1 3.5 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="contact-info-title">Call Us</h3>
+                            <p class="contact-info-value"><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            <p class="contact-info-note">Mon–Fri, 9 AM – 6 PM IST</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card reveal">
+                        <div class="contact-info-icon" style="background:#dcfce7">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="contact-info-title">Visit Us</h3>
+                            <p class="contact-info-value">Mumbai, Maharashtra</p>
+                            <p class="contact-info-note">Also in Delhi &amp; Bangalore</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card reveal">
+                        <div class="contact-info-icon" style="background:#e6f0ff">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0066cc"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="contact-info-title">Business Hours</h3>
+                            <p class="contact-info-value">Mon – Fri: 9 AM – 6 PM</p>
+                            <p class="contact-info-note">Saturday: 10 AM – 2 PM IST</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick CTA -->
+                    <div class="contact-quick-ctas reveal">
+                        <h3 class="contact-qcta-title">Prefer to Chat?</h3>
+                        <div class="contact-qcta-btns">
+                            <a href="https://wa.me/919876543210" class="btn"
+                                style="background:#25D366;color:white;gap:8px;" id="whatsapp-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                                    <path
+                                        d="M11.99 2C6.478 2 2 6.477 2 11.99c0 1.99.583 3.845 1.582 5.414L2 22l4.745-1.55C8.174 21.443 10.026 22 11.99 22 17.522 22 22 17.523 22 12.01 22 6.477 17.522 2 11.99 2z"
+                                        fill-rule="evenodd" clip-rule="evenodd" />
+                                </svg>
+                                WhatsApp Us
+                            </a>
+                            <a href="mailto:info@msservices.com" class="btn btn-secondary" id="email-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                Email Directly
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions before we connect</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-1-btn">
+                        How long does it take to see results from digital marketing?
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-1-ans">SEO typically takes 3–6 months to show significant results.
+                        Paid advertising (PPC) can show results within days. Social media marketing usually shows
+                        engagement growth within 1–2 months. We provide monthly reports so you can track progress from
+                        day one.</div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-2-btn">
+                        Do you offer long-term contracts or month-to-month services?
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-2-ans">We offer both options. Our monthly retainer plans require a
+                        minimum 3-month commitment for best results, while one-time projects (website builds, brand
+                        identity, etc.) are priced per project. Most clients stay with us long-term because of the
+                        results they see.</div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-3-btn">
+                        What industries do you specialize in?
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-3-ans">We work across all industries, including e-commerce, SaaS,
+                        healthcare, real estate, education, finance, fashion, and B2B services. Our strategies are
+                        always customized to your specific industry, target audience, and competitive landscape.</div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-4-btn">
+                        How much does a typical website cost?
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-4-ans">Website costs vary based on scope. A standard business
+                        website typically ranges from ₹50,000 to ₹2,00,000. E-commerce platforms start at ₹1,50,000.
+                        Custom web applications are priced based on features and complexity. Contact us for a free,
+                        no-obligation quote.</div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-5-btn">
+                        Do you provide reports and performance tracking?
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-5-ans">Yes, absolutely. Every client receives detailed monthly
+                        performance reports covering key metrics — traffic, conversions, ROI, keyword rankings, and
+                        more. We also set up live dashboards so you can check your data anytime. Transparency is core to
+                        how we work.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo"><img src="images/logo-footer.svg" alt="MS Services" width="200" height="44"
+                            class="footer-logo-svg" /></div>
+                    <p class="footer-desc">Empowering businesses with data-driven digital marketing and cutting-edge web
+                        development solutions.</p>
+                    <div class="social-links"><a href="#" class="social-link" aria-label="LinkedIn"><svg width="18"
+                                height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></a><a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg></a></div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html" class="footer-link">Digital Marketing</a></li>
+                        <li><a href="services.html" class="footer-link">Web Development</a></li>
+                        <li><a href="services.html" class="footer-link">Brand Strategy</a></li>
+                        <li><a href="services.html" class="footer-link">SEO &amp; Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Contact</h4>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg><a href="mailto:info@msservices.com" class="footer-link">info@msservices.com</a></li>
+                        <li class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg><span>Mumbai, India</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 MS Services. All rights reserved.</p>
+                    <div class="footer-bottom-links"><a href="#" class="footer-bottom-link">Privacy Policy</a><a
+                            href="#" class="footer-bottom-link">Terms</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+        </svg></button>
+    <script src="script.js"></script>
+    <script>
+        // Contact form
+        const cForm = document.getElementById('contactForm');
+        const cSuccess = document.getElementById('contact-success');
+        const cError = document.getElementById('contact-error');
+        if (cForm) {
+            cForm.addEventListener('submit', e => {
+                e.preventDefault();
+                cSuccess.style.display = 'none';
+                cError.style.display = 'none';
+                const req = ['firstName', 'lastName', 'contactEmail', 'serviceType', 'contactMessage'];
+                const allFilled = req.every(id => {
+                    const el = document.getElementById(id);
+                    return el && el.value.trim() !== '';
+                });
+                const emailEl = document.getElementById('contactEmail');
+                const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl?.value || '');
+                if (!allFilled || !emailValid) {
+                    cError.style.display = 'flex';
+                    return;
+                }
+                const btn = document.getElementById('contactSubmit');
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+                setTimeout(() => {
+                    cSuccess.style.display = 'flex';
+                    cForm.reset();
+                    btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send Message';
+                    btn.disabled = false;
+                }, 1200);
+            });
+        }
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.parentElement.classList.remove('open');
+                });
+                if (!isOpen) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.parentElement.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerBadgeGrad" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="footerBlueGrad" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4da6ff"/>
+      <stop offset="100%" stop-color="#0066cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Badge Group -->
+  <g id="logo-badge-footer">
+    <!-- Outer accent ring -->
+    <circle cx="24" cy="24" r="22" fill="url(#footerBadgeGrad)" stroke="url(#footerBlueGrad)" stroke-width="2"/>
+    <!-- Geometric decorative inner arc -->
+    <path d="M 9 24 A 15 15 0 0 1 39 24" stroke="#4da6ff" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4 2.5" fill="none"/>
+    <!-- "M" Monogram -->
+    <text x="13.5" y="28.5" font-family="'Poppins', 'Montserrat', sans-serif" font-weight="800" font-size="14" fill="#ffffff" letter-spacing="-0.5">M</text>
+    <!-- "S" Monogram -->
+    <text x="25.5" y="28.5" font-family="'Poppins', 'Montserrat', sans-serif" font-weight="800" font-size="14" fill="#4da6ff" letter-spacing="-0.5">S</text>
+  </g>
+
+  <!-- Brand Typography / Wordmark -->
+  <g id="logo-text-footer">
+    <text x="56" y="25" font-family="'Poppins', 'Montserrat', sans-serif" font-weight="800" font-size="20" fill="#ffffff" letter-spacing="-0.3">MS</text>
+    <text x="91" y="25" font-family="'Poppins', 'Montserrat', sans-serif" font-weight="700" font-size="20" fill="#4da6ff" letter-spacing="-0.3">SERVICES</text>
+    <text x="56" y="39" font-family="'Open Sans', sans-serif" font-weight="600" font-size="8.5" fill="rgba(255,255,255,0.6)" letter-spacing="3.2">DIGITAL &amp; TECH SOLUTIONS</text>
+  </g>
+</svg>
